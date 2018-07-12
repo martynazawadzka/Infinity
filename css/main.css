@@ -1,3 +1,233 @@
 body {
-  background-color: rebeccapurple;
+  font-family: "homenaje", sans-serif;
+}
+
+.header {
+  height: 650px;
+  width: 100%;
+  background-image: url("../images/chips-circuit-board-computer.png");
+  background-position: bottom;
+  background-size: cover;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  opacity: 0.9;
+  width: 100%;
+  height: 650px;
+  background-image: -webkit-linear-gradient(129deg, #ffae12 0%, #33a115 60%, #0f171e 100%);
+  background-image: -o-linear-gradient(129deg, #ffae12 0%, #33a115 60%, #0f171e 100%);
+  background-image: linear-gradient(-39deg, #ffae12 0%, #33a115 60%, #0f171e 100%);
+}
+
+.header__background {
+  position: relative;
+  z-index: 1;
+}
+
+.header__background::after {
+  content: "";
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  width: 100%;
+  height: 650px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAPUlEQVQoU2NkQAX/GRgYGJGEniFzMCQZGBikYAqwSoJMAinAKQlTgOyKZyBjcbkBQxLZDVglYVbglAQpAAAITA/VgCXC3AAAAABJRU5ErkJggg==") repeat;
+}
+
+.header__content {
+  margin: 0 auto;
+  width: 1010px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__slogan {
+  padding-top: 245px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 58px;
+  letter-spacing: -1px;
+  line-height: 61px;
+}
+
+.slogan__second-line {
+  display: block;
+  color: #333;
+}
+
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  height: 104px;
+}
+
+.cookie-bar::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  z-index: 11;
+  opacity: 0.9;
+  width: 100%;
+  height: 104px;
+  background-color: #222;
+  color: #fff;
+}
+
+.cookie-bar__content {
+  margin: 0 auto;
+  width: 1010px;
+  position: relative;
+  z-index: 12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 30px;
+  color: #fff;
+  font-family: "Mada";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.cookie-bar__img {
+  margin-left: 13px;
+}
+
+.cookie-bar__text {
+  margin: 0 105px 0 45px;
+}
+
+.cookie-bar__link {
+  color: #62c016;
+}
+
+.cookie-bar__button {
+  width: 130px;
+  height: 23px;
+  border: 1px solid #62c016;
+  border-radius: 3px;
+  background-color: #62c016;
+}
+
+.button__text {
+  color: white;
+  font-size: 14px;
+  font-family: "Mada";
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  font-family: "Mada";
+  text-decoration: none;
+}
+
+.nav__content {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.nav__images {
+  position: relative;
+  bottom: 142px;
+  display: inline-block;
+  width: 98px;
+  text-align: center;
+}
+
+.nav__images.scroll {
+  bottom: 57px;
+}
+
+.nav__list {
+  position: fixed;
+  top: 20px;
+  display: inline-block;
+  margin-left: 165px;
+}
+
+.nav__item {
+  display: inline-block;
+  height: 54px;
+  width: 145px;
+  border-right: 1px solid #fff;
+  text-align: center;
+  line-height: 54px;
+}
+
+.nav__itemlink {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__item_last {
+  border: none;
+}
+
+.images__menu {
+  position: relative;
+  top: 75px;
+  width: 35px;
+  margin: 0 auto;
+}
+
+.images__menu-icon {
+  color: #fff;
+  font-size: 40px;
+}
+
+.images__menu-text {
+  color: #fff;
+  font-family: "Mada";
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+.images__rectangle {
+  width: 96px;
+  height: 95px;
+  background-color: #61bf17;
+}
+
+.images__rectangle-background {
+  width: 950px;
+}
+
+.images__rectangle-background.scroll {
+  background-color: #333;
+}
+
+.images__images.scroll {
+  bottom: 0;
+}
+
+.images__logo {
+  position: relative;
+  top: 15px;
+  width: 66px;
 }

@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #242424;
+    &__content {
+        @include content-position;
+        box-sizing: border-box;
+        padding-left: 30px;
+        color: #8f8f8f;
+        font-size: 12px;
+        font-family: "Mada";
+        line-height: 20px;
+    }
+}

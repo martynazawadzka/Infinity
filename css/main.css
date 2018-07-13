@@ -296,3 +296,153 @@ body {
   font-family: "Mada";
   line-height: 20px;
 }
+
+.contact {
+  font-family: "Mada";
+}
+
+.contact__content {
+  margin: 0 auto;
+  width: 1010px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+
+.contact__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-left: 30px;
+  font-family: "Homenaje";
+}
+
+.contact__description, .contact__form {
+  margin: 0 130px;
+  color: #373737;
+  letter-spacing: -1px;
+}
+
+.contact__description {
+  margin-bottom: 55px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.contact__description_bold {
+  font-weight: bold;
+}
+
+.contact__form {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.header__title {
+  font-size: 50px;
+}
+
+.header__button {
+  padding: 0 18px;
+  border: none;
+  border-radius: 3px;
+  height: 42px;
+  background-color: #61bf17;
+  color: #fff;
+  font-size: 22px;
+  line-height: 42px;
+  letter-spacing: -1px;
+}
+
+.header__button::after {
+  content: "↑";
+  position: relative;
+  bottom: 3px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.form__text-input {
+  position: relative;
+  bottom: 3px;
+  border: none;
+  border-bottom: 1px solid #373737;
+  width: 220px;
+}
+
+.form__text-input:focus {
+  outline-width: 0;
+}
+
+.form__text-input_short {
+  width: 174px;
+}
+
+.form__text-input::-webkit-input-placeholder {
+  position: relative;
+  bottom: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.form__text-input:-ms-input-placeholder {
+  position: relative;
+  bottom: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.form__text-input::-ms-input-placeholder {
+  position: relative;
+  bottom: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.form__text-input::placeholder {
+  position: relative;
+  bottom: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.form__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border: 1px solid #d5d5d5;
+}
+
+.form__label {
+  vertical-align: text-bottom;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.form__submit {
+  display: block;
+  margin: 55px auto 0;
+  height: 42px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #61bf17;
+  color: #fff;
+  font-family: "Homenaje";
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+
+.form__submit::after {
+  content: "→";
+  padding-left: 43px;
+}

@@ -446,3 +446,40 @@ body {
   content: "→";
   padding-left: 43px;
 }
+
+.address {
+  background-color: #f1f1f1;
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-position-x: 244px;
+  background-position-y: -257px;
+}
+
+.address__inner {
+  padding: 160px 0 120px 210px;
+  color: #2d2d2d;
+  font-family: "Mada";
+  font-size: 22px;
+}
+
+.address__compass-icon, .address__content {
+  display: inline-block;
+}
+
+.address__content {
+  width: 260px;
+}
+
+.address__compass-icon {
+  vertical-align: top;
+  margin: 0 20px 0 30px;
+}
+
+.address__company-name {
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.address__text {
+  margin-bottom: 35px;
+}

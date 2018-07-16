@@ -1,0 +1,89 @@
+.products {
+    &__content {
+        @include content-position;
+        text-align: center;
+    }
+    &__title {
+        padding-top: 100px;
+        color: #2d2d2d;
+        font-size: 50px;
+        letter-spacing: -1px;
+    }
+    &__subtitle {
+        padding: 35px 0 60px;
+        color: #494949;
+        font-size: 22px;
+        font-family: "Mada";
+        letter-spacing: -1px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 780px;
+        margin: 0 auto;
+    }
+}
+
+.items {
+    &__item {
+        width: 195px;
+        height: 215px;
+    }
+    &__item:nth-child(n+9):hover {
+        & .items__item-inner {
+            position: relative;
+            bottom: 186px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            align-items: baseline;
+            justify-content: space-around;
+            align-content: space-between;
+            padding-top: 0;
+        }
+        & .items__img {
+            padding-bottom: 100px;
+        }
+    }
+    &__item-inner {
+        position: relative;
+        z-index: 5;
+        height: 375px;
+        & .items__description {
+            display: none;
+        }
+    }
+    &__item-inner:hover {
+        position: relative;
+        bottom: 50px;
+        z-index: 6;
+        box-sizing: border-box;
+        padding-top: 50px;
+        background-color: #62c016;
+        color: #fff;
+        & .items__img {
+            filter: invert(100%);
+            -webkit-filter: invert(100%);
+            -moz-filter: invert(100%);
+            -o-filter: invert(100%);
+            -ms-filter: invert(100%);
+        }
+        & .items__description {
+            position: relative;
+            top: 50px;
+            display: block;
+            padding: 15px;
+            text-align: left;
+        }
+    }
+    &__img-wrapper {
+        display: flex;
+        align-items: center;
+        width: 139px;
+        height: 139px;
+        margin: 0 auto;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+}

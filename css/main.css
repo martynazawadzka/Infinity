@@ -483,3 +483,115 @@ body {
 .address__text {
   margin-bottom: 35px;
 }
+
+.products__content {
+  margin: 0 auto;
+  width: 1010px;
+  text-align: center;
+}
+
+.products__title {
+  padding-top: 100px;
+  color: #2d2d2d;
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+
+.products__subtitle {
+  padding: 35px 0 60px;
+  color: #494949;
+  font-size: 22px;
+  font-family: "Mada";
+  letter-spacing: -1px;
+}
+
+.products__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 780px;
+  margin: 0 auto;
+}
+
+.items__item {
+  width: 195px;
+  height: 215px;
+}
+
+.items__item:nth-child(n+9):hover .items__item-inner {
+  position: relative;
+  bottom: 186px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  padding-top: 0;
+}
+
+.items__item:nth-child(n+9):hover .items__img {
+  padding-bottom: 100px;
+}
+
+.items__item-inner {
+  position: relative;
+  z-index: 5;
+  height: 375px;
+}
+
+.items__item-inner .items__description {
+  display: none;
+}
+
+.items__item-inner:hover {
+  position: relative;
+  bottom: 50px;
+  z-index: 6;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 50px;
+  background-color: #62c016;
+  color: #fff;
+}
+
+.items__item-inner:hover .items__img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+}
+
+.items__item-inner:hover .items__description {
+  position: relative;
+  top: 50px;
+  display: block;
+  padding: 15px;
+  text-align: left;
+}
+
+.items__img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 139px;
+  height: 139px;
+  margin: 0 auto;
+}
+
+.items__img {
+  display: block;
+  margin: 0 auto;
+}

@@ -10,12 +10,12 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
-        padding-left: 30px;
+        padding: 0 30px;
         font-family: "Homenaje";
     }
     &__description,
     &__form {
-        margin: 0 130px;
+        margin: 0 105px;
         color: #373737;
         letter-spacing: -1px;
     }

@@ -5,7 +5,12 @@
     background-position: right;
     background-position-y: -257px;
     &__inner {
-        padding: 160px 0 120px 210px;
+        width: $content-width;
+        margin: 0 auto;
+        padding: 160px 0 120px;
+    }
+    &__wrapper{
+        width: fit-content;
         color: #2d2d2d;
         font-family: "Mada";
         font-size: 22px;

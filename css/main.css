@@ -41,7 +41,7 @@ body {
 
 .header__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   position: relative;
   z-index: 3;
 }
@@ -83,7 +83,7 @@ body {
 
 .cookie-bar__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   position: relative;
   z-index: 12;
   display: -webkit-box;
@@ -109,7 +109,7 @@ body {
 }
 
 .cookie-bar__text {
-  margin: 0 105px 0 45px;
+  margin: 0 70px 0 45px;
 }
 
 .cookie-bar__link {
@@ -239,7 +239,7 @@ body {
 
 .mission__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   margin-top: 85px;
 }
 
@@ -287,7 +287,7 @@ body {
 
 .footer__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 30px;
@@ -303,7 +303,7 @@ body {
 
 .contact__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 85px;
@@ -318,12 +318,12 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 60px;
-  padding-left: 30px;
+  padding: 0 30px;
   font-family: "Homenaje";
 }
 
 .contact__description, .contact__form {
-  margin: 0 130px;
+  margin: 0 105px;
   color: #373737;
   letter-spacing: -1px;
 }
@@ -456,7 +456,15 @@ body {
 }
 
 .address__inner {
-  padding: 160px 0 120px 210px;
+  width: 960px;
+  margin: 0 auto;
+  padding: 160px 0 120px;
+}
+
+.address__wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #2d2d2d;
   font-family: "Mada";
   font-size: 22px;
@@ -486,7 +494,7 @@ body {
 
 .products__content {
   margin: 0 auto;
-  width: 1010px;
+  width: 960px;
   text-align: center;
 }
 

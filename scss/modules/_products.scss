@@ -87,3 +87,27 @@
         margin: 0 auto;
     }
 }
+
+@media (max-width: $breakpoint-desktop) {
+    .products {
+        &__content {
+            width: $desktop-content-width;
+        }
+        &__items {
+            width: $desktop-content-width;
+            justify-content: center;
+        }
+    }
+    .items {
+        &__item:nth-child(9):hover {
+            & .items__item-inner {
+                bottom: 50px;
+                display: block;
+                padding-top: 50px;
+            }
+            & .items__img{
+                padding-bottom: 0;
+            }
+        }
+    }
+}

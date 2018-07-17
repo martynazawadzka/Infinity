@@ -33,3 +33,10 @@
         letter-spacing: -1px;
     }
 }
+@media (max-width: $breakpoint-desktop){
+    .mission{
+        &__content{
+            width: $desktop-content-width;
+        }
+    }
+}

@@ -36,7 +36,7 @@
     &__text {
         margin: 0 70px 0 45px;
     }
-    &__link{
+    &__link {
         color: #62c016;
     }
     &__button {
@@ -47,6 +47,7 @@
         background-color: #62c016;
     }
 }
+
 .button {
     &__text {
         color: rgb(255, 255, 255);
@@ -56,5 +57,19 @@
         letter-spacing: 0px;
         line-height: 19px;
         text-transform: uppercase;
+    }
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .cookie-bar {
+        &__content {
+            width: $desktop-content-width;
+            font-size: 12px;
+        }
+    }
+    .button {
+        &__text {
+            font-size: 11px;
+        }
     }
 }

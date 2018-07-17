@@ -49,3 +49,10 @@
         color: #333;
     }
 }
+@media (max-width: $breakpoint-desktop){
+    .header{
+        &__content{
+            width: $desktop-content-width;
+        }
+    }
+}

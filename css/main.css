@@ -451,7 +451,7 @@ body {
   background-color: #f1f1f1;
   background-image: url("../images/map.png");
   background-repeat: no-repeat;
-  background-position-x: 244px;
+  background-position: right;
   background-position-y: -257px;
 }
 

@@ -13,3 +13,13 @@
         line-height: 20px;
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .footer {
+        height: 60px;
+        &__content {
+            padding: 0 10px 0 10px;
+            font-size: 10px;
+        }
+    }
+}

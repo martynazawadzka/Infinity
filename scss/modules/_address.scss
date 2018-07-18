@@ -9,22 +9,22 @@
         margin: 0 auto;
         padding: 160px 0 120px;
     }
-    &__wrapper{
+    &__wrapper {
         width: fit-content;
         color: #2d2d2d;
         font-family: "Mada";
         font-size: 22px;
     }
-    &__compass-icon, &__content{
+    &__compass-icon,
+    &__content {
         display: inline-block;
     }
-    &__content{
+    &__content {
         width: 260px;
     }
-
-    &__compass-icon{
+    &__compass-icon {
         vertical-align: top;
-        margin: 0 20px 0 30px; 
+        margin: 0 20px 0 30px;
     }
     &__company-name {
         font-weight: bold;
@@ -34,11 +34,22 @@
         margin-bottom: 35px;
     }
 }
-@media (max-width: $breakpoint-desktop){
-.address{
-    background-position-x: -26vh;
-    &__inner{
-        width: $desktop-content-width;
+
+@media (max-width: $breakpoint-desktop) {
+    .address {
+        background-position-x: calc(100% + 265px);
+        &__inner {
+            width: $desktop-content-width;
+        }
     }
 }
+
+@media (max-width: $breakpoint-tablet) {
+    .address {
+        background-image: none;
+        &__inner {
+            width: fit-content;
+            padding: 50px;
+        }
+    }
 }

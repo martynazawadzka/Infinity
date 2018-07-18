@@ -112,16 +112,50 @@
         padding-left: 43px;
     }
 }
-@media (max-width: $breakpoint-desktop){
-.contact {
-    &__content{
-        width: $desktop-content-width;
+
+@media (max-width: $breakpoint-desktop) {
+    .contact {
+        &__content {
+            width: $desktop-content-width;
+        }
+        &__form,
+        &__description {
+            margin: 20px 36px;
+        }
+        &__form {
+            font-size: 24px;
+        }
     }
-    &__form, &__description{
-        margin: 0 36px;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .contact {
+        &__content {
+            width: 100%;
+        }
+        &__description {
+            font-size: 17px;
+        }
+        .header {
+            &__title {
+                font-size: 40px
+            }
+            &__button {
+                font-size: 18px;
+            }
+        }
+        .form {
+            &__text-input {
+                width: 97%;
+            }
+            &__checkbox {
+                width: 15px;
+                height: 15px;
+            }
+            &__label {
+                vertical-align: super;
+                font-size: 10px;
+            }
+        }
     }
-    &__form{
-        font-size: 24px;
-    }
-} 
 }

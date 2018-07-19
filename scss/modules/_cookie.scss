@@ -15,6 +15,9 @@
         background-color: #222;
         color: #fff;
     }
+    &_hide {
+        display: none;
+    }
     &__content {
         @include content-position;
         position: relative;
@@ -45,6 +48,13 @@
         border: 1px solid #62c016;
         border-radius: 3px;
         background-color: #62c016;
+        &:focus {
+            border: 1px solid #52b006;
+            outline: 0;
+        }
+        &:hover {
+            border: 1px solid #52b006;
+        }
     }
 }
 

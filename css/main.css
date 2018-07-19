@@ -93,6 +93,10 @@ body {
   color: #fff;
 }
 
+.cookie-bar_hide {
+  display: none;
+}
+
 .cookie-bar__content {
   margin: 0 auto;
   width: 960px;
@@ -134,6 +138,15 @@ body {
   border: 1px solid #62c016;
   border-radius: 3px;
   background-color: #62c016;
+}
+
+.cookie-bar__button:focus {
+  border: 1px solid #52b006;
+  outline: 0;
+}
+
+.cookie-bar__button:hover {
+  border: 1px solid #52b006;
 }
 
 .button__text, .button__close-icon {

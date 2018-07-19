@@ -23,3 +23,12 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .footer {
+        height: 50px;
+        &__content {
+            line-height: 12px;
+        }
+    }
+}

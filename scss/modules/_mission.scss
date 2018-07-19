@@ -59,3 +59,25 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .mission {
+        height: 500px;
+        &__content{
+            margin-top: 40px;
+        }
+        &__title {
+            margin-bottom: 20px;
+            font-size: $title-font-size-mobile;
+        }
+        &__text {
+            margin: 0 48px;
+            line-height: 32px;
+            font-size: $description-font-size-mobile;
+        }
+        &__text::before {
+            right: 22px;
+            font-size: 40px;
+        }
+    }
+}

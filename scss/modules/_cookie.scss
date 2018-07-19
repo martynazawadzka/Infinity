@@ -99,8 +99,7 @@
             height: 30px;
             margin-left: 0;
         }
-        &__text,
-            {
+        &__text {
             margin: 0 20px 0 20px;
             font-size: 11px;
         }
@@ -111,6 +110,23 @@
     .button {
         &__text {
             display: none;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .cookie-bar {
+        &__content {
+            padding: 0 15px;
+        }
+        &__img {
+            display: none;
+        }
+        &__text {
+            margin-left: 0;
+            margin-right: 10px;
+            line-height: 15px;
+            font-size: 11px;
         }
     }
 }

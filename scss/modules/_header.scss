@@ -65,3 +65,19 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .header {
+        height: $header-height-mobile;
+        &::after {
+            height: $header-height-mobile;
+        }
+        &__background::after {
+            height: $header-height-mobile;
+        }
+        &__slogan {
+            padding-top: 100px;
+            font-size: 50px;
+        }
+    }
+}

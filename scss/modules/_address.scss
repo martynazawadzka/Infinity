@@ -53,3 +53,28 @@
         }
     }
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .address {
+        &__inner {
+            padding: 30px;
+        }
+        &__wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            font-size: $description-font-size-mobile;
+        }
+        &__compass-icon{
+            height: 34px;
+        }
+        &__content{
+            width: auto;
+        }
+        &__company-name{
+            margin-bottom: 20px;
+        }
+        &__text {
+            margin-bottom: 15px;
+        }
+    }
+}

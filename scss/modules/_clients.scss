@@ -1,0 +1,93 @@
+.clients {
+    height: 720px;
+    background-image: url("../images/trianglify.png");
+    background-size: cover;
+    &__title {
+        padding-top: 120px;
+        padding-bottom: 40px;
+        color: #fff;
+        font-size: 50px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    &__slider {
+        @include content-position;
+    }
+}
+
+.slider {
+    &__slide {
+        display: none;
+        &#{&}_active {
+            display: flex;
+        }
+    }
+    &__pins{
+        position: relative;
+        bottom: 40px;    
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.slide {
+    &__image{
+        max-width: 340px;
+        max-height: 380px;
+        &-wrapper{
+            height: 380px;
+            width: 340px;
+            text-align: center;
+        }
+    }
+    &__text::before {
+        content: "„";
+        position: relative;
+        top: 10px;
+        right: 40px;
+        color: #2d2d2d;
+        line-height: 20px;
+        font-size: 80px;
+    }
+    &__text {
+        margin-left: 40px;
+        font-family: "Mada";
+        letter-spacing: -1px;
+    }
+    &__description {
+        width: 510px;
+        font-size: 30px;
+        line-height: 42px;
+        color: #3c3c3c;
+    }
+    &__signature {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 22px;
+        color: #1c1b1b;
+        &_link {
+            color: #fff;
+        }
+    }
+}
+
+.tags {
+    &__tag {
+        margin-right: 3px;
+        padding: 2px 10px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+}
+
+.pins{
+    &__pin{
+        width: 32px;
+        opacity: 0.5;
+        &_active{
+            opacity: 1;
+        }
+    }
+}

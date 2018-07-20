@@ -13,35 +13,37 @@
     <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mada" rel="stylesheet">
     <script src="js/cookies.js"></script>
+    <script src="js/navigation.js"></script>
 </head>
 
 <body>
     <nav class="nav">
+        <div class="nav__close-button">
+            &times;
+        </div>
+        <div class="nav__menu">
+            <i class="nav__menu-icon fas fa-bars"></i>
+            <span class="nav__menu-text">Menu</span>
+        </div>
         <div class="nav__content">
             <div>
-                <div class="nav__images scroll">
-                    <div class="images__menu">
-                        <i class="images__menu-icon fas fa-bars"></i>
-                        <span class="images__menu-text">Menu</span>
-                    </div>
-                    <div class="images__rectangle-background scroll">
-                        <div class="images__rectangle"></div>
-                    </div>
+                <div class="nav__images">
+                    <div class="images__rectangle"></div>
                     <img class="images__logo" src="images/logo.png" />
                 </div>
             </div>
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__itemlink" href="#">Mission</a>
+                    <a class="nav__itemlink" href="#mission">Mission</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__itemlink" href="#">Clients</a>
+                    <a class="nav__itemlink" href="#clients">Clients</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__itemlink" href="#">Products</a>
+                    <a class="nav__itemlink" href="#products">Products</a>
                 </li>
                 <li class="nav__item nav__item_last">
-                    <a class="nav__itemlink" href="#">Contact</a>
+                    <a class="nav__itemlink" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +60,7 @@
             </div>
         </div>
     </header>
-    <section class="mission">
+    <section class="mission" id="mission">
         <div class="mission__content">
             <h1 class="mission__title">
                 Mission
@@ -71,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
         <div class="products__content">
             <h1 class="products__title">Products</h1>
             <h2 class="products__subtitle">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h2>
@@ -207,7 +209,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__content">
             <header class="contact__header">
                 <h1 class="header__title">

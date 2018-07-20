@@ -2,7 +2,7 @@
     height: 550px;
     &__content {
         @include content-position;
-        margin-top: 85px;
+        padding-top: 85px;
     }
     &__title {
         margin-bottom: 40px;

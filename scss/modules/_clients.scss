@@ -22,19 +22,19 @@
             display: flex;
         }
     }
-    &__pins{
+    &__pins {
         position: relative;
-        bottom: 40px;    
+        bottom: 40px;
         text-align: center;
         color: #fff;
     }
 }
 
 .slide {
-    &__image{
+    &__image {
         max-width: 340px;
         max-height: 380px;
-        &-wrapper{
+        &-wrapper {
             height: 380px;
             width: 340px;
             text-align: center;
@@ -50,12 +50,12 @@
         font-size: 80px;
     }
     &__text {
+        width: 510px;
         margin-left: 40px;
         font-family: "Mada";
         letter-spacing: -1px;
     }
     &__description {
-        width: 510px;
         font-size: 30px;
         line-height: 42px;
         color: #3c3c3c;
@@ -82,12 +82,136 @@
     }
 }
 
-.pins{
-    &__pin{
+.pins {
+    &__pin {
         width: 32px;
         opacity: 0.5;
-        &_active{
+        &_active {
             opacity: 1;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-desktop) {
+    .clients {
+        &__slider {
+            width: $desktop-content-width;
+        }
+    }
+    .slide {
+        &__text {
+            width: 350px;
+        }
+        &__description {
+            line-height: 35px;
+            font-size: 28px;
+        }
+        &__signature {
+            margin-top: 25px;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .clients {
+        height: 450px;
+        &__slider {
+            width: 100%;
+        }
+        &__title {
+            padding-top: 50px;
+        }
+    }
+    .slider {
+        &__slide {
+            &#{&}_active {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__pins {
+            bottom: 0;
+        }
+    }
+    .slide {
+        &__image {
+            max-width: 200px;
+            max-height: 225px;
+            &-wrapper {
+                width: 200px;
+                height: 225px;
+            }
+        }
+        &__text {
+            width: 230px;
+            margin-left: 20px;
+        }
+        &__text::before {
+            right: 30px;
+            font-size: 50px;
+        }
+        &__description {
+            line-height: 30px;
+            font-size: 20px;
+        }
+        &__signature {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        &__tags {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .clients {
+        &__title {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: $title-font-size-mobile;
+        }
+    }
+    .slider {
+        &__slide {
+            &#{&}_active {
+                display: block;
+            }
+        }
+    }
+    .slide {
+        &__image {
+            max-width: 125px;
+            max-height: 140px;
+            &-wrapper {
+                width: 125px;
+                height: 140px;
+                margin: 0 auto;
+            }
+        }
+        &__text {
+            width: 235px;
+            margin: 0 auto;
+        }
+        &__text::before {
+            right: 20px;
+            font-size: 32px;
+        }
+        &__description {
+            line-height: 22px;
+            font-size: $description-font-size-mobile;
+        }
+        &__signature {
+            font-size: 14px;
+        }
+    }
+    .pins {
+        &__pin {
+            width: 16px;
+            font-size: 10px;
         }
     }
 }

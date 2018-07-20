@@ -1082,13 +1082,13 @@ body {
 }
 
 .slide__text {
+  width: 510px;
   margin-left: 40px;
   font-family: "Mada";
   letter-spacing: -1px;
 }
 
 .slide__description {
-  width: 510px;
   font-size: 30px;
   line-height: 42px;
   color: #3c3c3c;
@@ -1121,4 +1121,112 @@ body {
 
 .pins__pin_active {
   opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .clients__slider {
+    width: 750px;
+  }
+  .slide__text {
+    width: 350px;
+  }
+  .slide__description {
+    line-height: 35px;
+    font-size: 28px;
+  }
+  .slide__signature {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients {
+    height: 450px;
+  }
+  .clients__slider {
+    width: 100%;
+  }
+  .clients__title {
+    padding-top: 50px;
+  }
+  .slider__slide.slider__slide_active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .slider__pins {
+    bottom: 0;
+  }
+  .slide__image {
+    max-width: 200px;
+    max-height: 225px;
+  }
+  .slide__image-wrapper {
+    width: 200px;
+    height: 225px;
+  }
+  .slide__text {
+    width: 230px;
+    margin-left: 20px;
+  }
+  .slide__text::before {
+    right: 30px;
+    font-size: 50px;
+  }
+  .slide__description {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .slide__signature {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .slide__tags {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 36px;
+  }
+  .slider__slide.slider__slide_active {
+    display: block;
+  }
+  .slide__image {
+    max-width: 125px;
+    max-height: 140px;
+  }
+  .slide__image-wrapper {
+    width: 125px;
+    height: 140px;
+    margin: 0 auto;
+  }
+  .slide__text {
+    width: 235px;
+    margin: 0 auto;
+  }
+  .slide__text::before {
+    right: 20px;
+    font-size: 32px;
+  }
+  .slide__description {
+    line-height: 22px;
+    font-size: 16px;
+  }
+  .slide__signature {
+    font-size: 14px;
+  }
+  .pins__pin {
+    width: 16px;
+    font-size: 10px;
+  }
 }

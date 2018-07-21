@@ -17,14 +17,19 @@
 
 .slider {
     &__slide {
-        display: none;
+        display: flex;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 1s;
         &#{&}_active {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
         }
     }
     &__pins {
         position: relative;
-        bottom: 40px;
+        top: 340px;
         text-align: center;
         color: #fff;
     }
@@ -118,6 +123,8 @@
     .clients {
         height: 450px;
         &__slider {
+            display: flex;
+            justify-content: center;
             width: 100%;
         }
         &__title {
@@ -125,14 +132,8 @@
         }
     }
     .slider {
-        &__slide {
-            &#{&}_active {
-                display: flex;
-                justify-content: center;
-            }
-        }
         &__pins {
-            bottom: 0;
+            top: 250px;
         }
     }
     .slide {
@@ -177,9 +178,13 @@
     }
     .slider {
         &__slide {
+            display: block;
             &#{&}_active {
                 display: block;
             }
+        }
+        &__pins {
+            top: 310px;
         }
     }
     .slide {

@@ -1130,6 +1130,10 @@ body {
   opacity: 1;
 }
 
+.pins__pin:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 980px) {
   .clients__slider {
     width: 750px;

@@ -95,6 +95,9 @@
             opacity: 1;
         }
     }
+    &__pin:hover {
+        cursor: pointer;
+    }
 }
 
 @media (max-width: $breakpoint-desktop) {

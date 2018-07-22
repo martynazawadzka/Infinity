@@ -89,10 +89,19 @@
         border: 1px solid #61bf17;
         background-color: #61bf17;
     }
+    &__checkbox:hover{
+        cursor: pointer;
+    }
+    &__checkbox:focus{
+        outline: none;
+    }
     &__label {
         vertical-align: text-bottom;
         font-size: 16px;
         letter-spacing: 0px;
+    }
+    &__label:hover{
+        cursor: pointer;
     }
     &__submit {
         display: block;
@@ -101,11 +110,15 @@
         padding: 0 10px;
         border: none;
         border-radius: 3px;
+        outline: none;
         background-color: #61bf17;
         color: #fff;
         font-family: "Homenaje";
         font-size: 22px;
         letter-spacing: -1px;
+    }
+    &__submit:hover {
+        cursor: pointer;
     }
     &__submit::after {
         content: "→";
@@ -163,7 +176,7 @@
 @media (max-width: $breakpoint-mobile) {
     .contact {
         &__content {
-            margin-top: 40px;
+            padding-top: 50px;
             margin-bottom: 40px;
         }
         &__header {

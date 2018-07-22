@@ -356,6 +356,9 @@ body {
     font-size: 50px;
     color: #fff;
   }
+  .nav.nav_overlay .nav__close-button:hover {
+    cursor: pointer;
+  }
   .nav.nav_overlay .nav__menu {
     display: none;
   }

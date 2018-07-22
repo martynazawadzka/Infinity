@@ -115,6 +115,9 @@
                     font-size: 50px;
                     color: #fff;
                 }
+                &__close-button:hover {
+                    cursor: pointer;
+                }
                 &__menu {
                     display: none;
                 }

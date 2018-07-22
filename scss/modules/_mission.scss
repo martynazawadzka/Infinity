@@ -2,6 +2,7 @@
     &__content {
         @include content-position;
         padding-top: 85px;
+        padding-bottom: 160px;
     }
     &__title {
         margin-bottom: 40px;
@@ -45,6 +46,7 @@
     .mission {
         &__content {
             width: 100%;
+            padding-bottom: 90px;
         }
         &__title {
             font-size: 40px;
@@ -61,8 +63,9 @@
 
 @media (max-width: $breakpoint-mobile) {
     .mission {
-        &__content{
+        &__content {
             padding-top: 50px;
+            padding-bottom: 40px;
         }
         &__title {
             margin-bottom: 20px;

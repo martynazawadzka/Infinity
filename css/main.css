@@ -400,10 +400,6 @@ body {
   }
 }
 
-.mission {
-  height: 550px;
-}
-
 .mission__content {
   margin: 0 auto;
   width: 960px;
@@ -464,11 +460,8 @@ body {
 }
 
 @media (max-width: 480px) {
-  .mission {
-    height: 500px;
-  }
   .mission__content {
-    margin-top: 40px;
+    padding-top: 50px;
   }
   .mission__title {
     margin-bottom: 20px;

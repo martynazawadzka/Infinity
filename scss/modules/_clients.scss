@@ -6,7 +6,7 @@
         padding-top: 120px;
         padding-bottom: 40px;
         color: #fff;
-        font-size: 50px;
+        font-size: $title-font-size-desktop-large;
         letter-spacing: -1px;
         text-align: center;
     }
@@ -68,7 +68,7 @@
     &__signature {
         margin-top: 30px;
         margin-bottom: 40px;
-        font-size: 22px;
+        font-size: $description-font-size-desktop-large;
         color: #1c1b1b;
         &_link {
             color: #fff;
@@ -132,6 +132,7 @@
         }
         &__title {
             padding-top: 50px;
+            font-size: $title-font-size-tablet;
         }
     }
     .slider {
@@ -163,7 +164,7 @@
         &__signature {
             margin-top: 20px;
             margin-bottom: 30px;
-            font-size: 18px;
+            font-size: $description-font-size-tablet;
         }
         &__tags {
             display: none;

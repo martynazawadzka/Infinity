@@ -21,7 +21,7 @@
     }
     &__description {
         margin-bottom: 55px;
-        font-size: 22px;
+        font-size: $description-font-size-desktop-large;
         line-height: 30px;
         &_bold {
             font-weight: bold;
@@ -35,7 +35,7 @@
 
 .header {
     &__title {
-        font-size: 50px;
+        font-size: $title-font-size-desktop-large;
     }
     &__button {
         padding: 0 18px;
@@ -89,10 +89,10 @@
         border: 1px solid #61bf17;
         background-color: #61bf17;
     }
-    &__checkbox:hover{
+    &__checkbox:hover {
         cursor: pointer;
     }
-    &__checkbox:focus{
+    &__checkbox:focus {
         outline: none;
     }
     &__label {
@@ -100,7 +100,7 @@
         font-size: 16px;
         letter-spacing: 0px;
     }
-    &__label:hover{
+    &__label:hover {
         cursor: pointer;
     }
     &__submit {
@@ -147,11 +147,11 @@
             width: 100%;
         }
         &__description {
-            font-size: 17px;
+            font-size: $description-font-size-tablet;
         }
         .header {
             &__title {
-                font-size: 40px;
+                font-size: $title-font-size-tablet;
             }
             &__button {
                 font-size: 18px;
@@ -187,7 +187,7 @@
             font-size: $description-font-size-mobile;
         }
         &__form {
-            font-size: 22px;
+            font-size: $description-font-size-desktop-large;
         }
         .header {
             &__title {
@@ -206,7 +206,7 @@
             &__agreement {
                 line-height: 20px;
             }
-            &__submit{
+            &__submit {
                 margin-top: 40px;
             }
         }

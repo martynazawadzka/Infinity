@@ -13,7 +13,7 @@
         width: fit-content;
         color: #2d2d2d;
         font-family: "Mada";
-        font-size: 22px;
+        font-size: $description-font-size-desktop-large;
     }
     &__compass-icon,
     &__content {
@@ -64,13 +64,13 @@
             flex-direction: row-reverse;
             font-size: $description-font-size-mobile;
         }
-        &__compass-icon{
+        &__compass-icon {
             height: 34px;
         }
-        &__content{
+        &__content {
             width: auto;
         }
-        &__company-name{
+        &__company-name {
             margin-bottom: 20px;
         }
         &__text {

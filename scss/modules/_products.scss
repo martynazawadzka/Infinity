@@ -129,10 +129,10 @@
             width: 100%;
         }
         &__title {
-            font-size: 40px;
+            font-size: $title-font-size-tablet;
         }
         &__subtitle {
-            font-size: 18px;
+            font-size: $description-font-size-tablet;
         }
         &__popup {
             position: absolute;

@@ -715,7 +715,7 @@ body {
     width: 100%;
   }
   .contact__description {
-    font-size: 17px;
+    font-size: 18px;
   }
   .contact .header__title {
     font-size: 40px;
@@ -1278,6 +1278,7 @@ body {
   }
   .clients__title {
     padding-top: 50px;
+    font-size: 40px;
   }
   .slider__pins {
     top: 250px;

@@ -17,15 +17,16 @@ function hidePopup() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    let closeButton = document.querySelector('.popup__close-button');
-    closeButton.addEventListener('touchend', hidePopup);
+    let popup = document.querySelector('.products__popup');
+    popup.addEventListener('click', hidePopup);
+
 
     let itemList = document.querySelectorAll('.items__item');
     for (let i = 0; i < itemList.length; i++) {
-        itemList[i].addEventListener('touchend', function () {
+        itemList[i].addEventListener('click', function () {
             let imageUrl = this.querySelector('.items__img').getAttribute('src');
-
             let itemText = this.querySelector('.items__description').innerHTML;
+
             showPopup(imageUrl, itemText);
         });
     }

@@ -213,6 +213,9 @@
             max-height: 70px;
             max-width: 70px;
             filter: invert(100%);
+            &-wrapper {
+                height: 70px;
+            }
         }
         &__text {
             margin-top: 20px;
@@ -244,6 +247,9 @@
         &__img {
             max-height: 100px;
             max-width: 100px;
+            &-wrapper {
+                height: 100px;
+            }
         }
         &__close-button {
             left: 170px;

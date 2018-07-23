@@ -1104,6 +1104,9 @@ body {
     -webkit-filter: invert(100%);
     filter: invert(100%);
   }
+  .popup__img-wrapper {
+    height: 70px;
+  }
   .popup__text {
     margin-top: 20px;
   }
@@ -1128,6 +1131,9 @@ body {
   .popup__img {
     max-height: 100px;
     max-width: 100px;
+  }
+  .popup__img-wrapper {
+    height: 100px;
   }
   .popup__close-button {
     left: 170px;

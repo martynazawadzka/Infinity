@@ -11,7 +11,7 @@
     &__menu {
         display: none;
         width: 35px;
-        color: #fff;
+        color: $color-white;
         text-align: center;
     }
     &__menu-icon {
@@ -45,13 +45,13 @@
         display: inline-block;
         height: 54px;
         width: 143px;
-        border-right: 1px solid #fff;
+        border-right: 1px solid $color-white;
         text-align: center;
         line-height: 54px;
     }
     &__itemlink {
         display: block;
-        color: #fff;
+        color: $color-white;
         font-size: 14px;
         text-decoration: none;
         text-transform: uppercase;
@@ -65,7 +65,7 @@
     &__rectangle {
         width: 96px;
         height: 10px;
-        background-color: #61bf17;
+        background-color: $color-green;
     }
     &__logo {
         position: relative;
@@ -113,7 +113,7 @@
                     float: right;
                     width: 40px;
                     font-size: 50px;
-                    color: #fff;
+                    color: $color-white;
                 }
                 &__close-button:hover {
                     cursor: pointer;

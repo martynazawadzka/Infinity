@@ -1,11 +1,11 @@
 function showMenu() {
     let navElement = document.querySelector('.nav');
-    navElement.classList.add('nav_overlay');
+    navElement.classList.add('nav--overlay');
 }
 
 function hideMenu() {
     let navElement = document.querySelector('.nav');
-    navElement.classList.remove('nav_overlay');
+    navElement.classList.remove('nav--overlay');
 }
 
 document.addEventListener('DOMContentLoaded', function () {

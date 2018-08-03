@@ -2,7 +2,7 @@
 
 function nextSlide() {
     const slidesNumber = document.querySelectorAll('.slider__slide').length;
-    const activeSlide = document.querySelector('.slider__slide_active');
+    const activeSlide = document.querySelector('.slider__slide--active');
     let activeSlideId = parseInt(activeSlide.dataset.slideid);
 
     if (activeSlideId > slidesNumber - 1) {
@@ -13,7 +13,7 @@ function nextSlide() {
 
 function prevSlide() {
     const slidesNumber = document.querySelectorAll('.slider__slide').length;
-    const activeSlide = document.querySelector('.slider__slide_active');
+    const activeSlide = document.querySelector('.slider__slide--active');
     let activeSlideId = parseInt(activeSlide.dataset.slideid);
 
     if (activeSlideId == 1) {
@@ -23,17 +23,17 @@ function prevSlide() {
 }
 
 function changeSlide(newSlideId) {
-    const activeSlide = document.querySelector('.slider__slide_active');
-    activeSlide.classList.remove('slider__slide_active');
+    const activeSlide = document.querySelector('.slider__slide--active');
+    activeSlide.classList.remove('slider__slide--active');
 
     const newSlide = document.querySelector('[data-slideid = "' + newSlideId + '"]');
-    newSlide.classList.add('slider__slide_active');
+    newSlide.classList.add('slider__slide--active');
 
-    const activePin = document.querySelector('.pins__pin_active');
-    activePin.classList.remove('pins__pin_active');
+    const activePin = document.querySelector('.pins__pin--active');
+    activePin.classList.remove('pins__pin--active');
 
     const newPin = document.querySelector('[data-pinid = "' + newSlideId + '"]');
-    newPin.classList.add('pins__pin_active');
+    newPin.classList.add('pins__pin--active');
 }
 
 function pinClick() {

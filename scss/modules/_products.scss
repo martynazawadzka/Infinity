@@ -190,7 +190,7 @@
     .popup {
         &__content {
             display: none;
-            &#{&}_active {
+            &#{&}--active {
                 z-index: 10;
                 display: block;
                 box-sizing: border-box;
@@ -238,7 +238,7 @@
     }
     .popup {
         &__content {
-            &#{&}_active {
+            &#{&}--active {
                 height: 300px;
                 width: 230px;
                 padding: 20px;

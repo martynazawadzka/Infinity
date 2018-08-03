@@ -2,7 +2,7 @@
 
 function showPopup(imageUrl, itemText) {
     let popupElement = document.querySelector('.popup__content');
-    popupElement.classList.add('popup__content_active');
+    popupElement.classList.add('popup__content--active');
 
     let popupImage = document.querySelector('.popup__img');
     popupImage.setAttribute('src', imageUrl);
@@ -13,7 +13,7 @@ function showPopup(imageUrl, itemText) {
 
 function hidePopup() {
     let popupElement = document.querySelector('.popup__content');
-    popupElement.classList.remove('popup__content_active');
+    popupElement.classList.remove('popup__content--active');
 }
 
 document.addEventListener('DOMContentLoaded', function () {

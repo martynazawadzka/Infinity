@@ -2,7 +2,7 @@
 
 function closeCookieBar() {
     const cookieElement = document.querySelector('.cookie-bar');
-    cookieElement.classList.add('cookie-bar_hide');
+    cookieElement.classList.add('cookie-bar--hide');
     localStorage.setItem('cookie', 'true');
 }
 

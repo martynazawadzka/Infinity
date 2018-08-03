@@ -22,7 +22,7 @@
         visibility: hidden;
         opacity: 0;
         transition: visibility 1s, opacity 1s;
-        &#{&}_active {
+        &#{&}--active {
             visibility: visible;
             opacity: 1;
         }
@@ -70,7 +70,7 @@
         margin-bottom: 40px;
         font-size: $description-font-size-desktop-large;
         color: #1c1b1b;
-        &_link {
+        &--link {
             color: $color-white;
         }
     }
@@ -91,7 +91,7 @@
     &__pin {
         width: 32px;
         opacity: 0.5;
-        &_active {
+        &--active {
             opacity: 1;
         }
     }
@@ -183,7 +183,7 @@
     .slider {
         &__slide {
             display: block;
-            &#{&}_active {
+            &#{&}--active {
                 display: block;
             }
         }

@@ -1,16 +1,18 @@
 .address {
-    background-color: #f1f1f1;
-    background-image: url("../images/map.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-position-y: -257px;
+    &__map {
+        position: absolute;
+        height: 490px;
+        width: 100%;
+    }
     &__inner {
-        width: $content-width;
+        position: relative;
+        right: 22%;
+        z-index: 0;
+        width: fit-content;
         margin: 0 auto;
         padding: 160px 0 120px;
     }
     &__wrapper {
-        width: fit-content;
         color: $color-dark-gray;
         font-family: "Mada";
         font-size: $description-font-size-desktop-large;
@@ -35,20 +37,14 @@
     }
 }
 
-@media (max-width: $breakpoint-desktop) {
-    .address {
-        background-position-x: calc(100% + 265px);
-        &__inner {
-            width: $desktop-content-width;
-        }
-    }
-}
-
 @media (max-width: $breakpoint-tablet) {
     .address {
-        background-image: none;
+        background-color: #f1f1f1;
+        &__map {
+            display: none;
+        }
         &__inner {
-            width: fit-content;
+            right: 0;
             padding: 50px;
         }
     }
